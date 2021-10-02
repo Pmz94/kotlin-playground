@@ -50,7 +50,7 @@ fun main() {
  *
  * @param residents Current number of residents
  */
-abstract class Dwelling(private var residents: Int){
+abstract class Dwelling(private var residents: Int) {
 
 	abstract val buildingMaterial: String
 	abstract val capacity: Int
@@ -79,7 +79,7 @@ abstract class Dwelling(private var residents: Int){
 	 * Print the result.
 	 */
 	fun getRoom() {
-		if (capacity > residents) {
+		if(capacity > residents) {
 			residents++
 			println("You got a room!")
 		} else {
@@ -148,6 +148,7 @@ open class RoundHut(val residents: Int, val radius: Double) : Dwelling(residents
  */
 class RoundTower(residents: Int, radius: Double, val floors: Int = 2) : RoundHut(residents, radius) {
 	override val buildingMaterial = "Stone"
+
 	// Capacity depends on the number of floors.
 	override val capacity = 4 * floors
 
