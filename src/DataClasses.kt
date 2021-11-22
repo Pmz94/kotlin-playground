@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
     // Instanciamos la clase Superhero y le asignamos valores a sus atributos
-    val batman: Superhero = Superhero("Batman", "DC", "Bruce Wayne", "https://cursokotlin.com/wp-content/uploads/2017/07/batman.jpg")
+    val batman = Superhero("Batman", "DC", "Bruce Wayne", "https://cursokotlin.com/wp-content/uploads/2017/07/batman.jpg")
     // para hacer una copia del objeto y renombrar alguno de sus atributos
     val superBatman: Superhero = batman.copy(name = "SuperBatman")
 

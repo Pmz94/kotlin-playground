@@ -16,6 +16,6 @@ fun main(args: Array<String>) {
 	// val mutableList: MutableList<String> = mutableListOf("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado")
 	val mutableList: MutableList<String> = weekDays.toMutableList()
 	val newListEmpty: MutableList<String> = mutableListOf()
-	mutableList.forEach { newListEmpty.add(it + ":") }
+	mutableList.forEach { newListEmpty.add("$it:") }
 	print(newListEmpty)
 }

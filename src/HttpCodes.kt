@@ -6,8 +6,7 @@ fun main(args: Array<String>) {
 }
 
 fun getStatusReason(code: Int): String {
-    var reason: String = ""
-    reason = when(code) {
+    val reason: String = when(code) {
         200 -> "OK"
         201 -> "Created"
         202 -> "Accepted"

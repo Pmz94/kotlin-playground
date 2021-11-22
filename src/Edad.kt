@@ -11,7 +11,7 @@ fun getAge(year: Int, month: Int, day: Int): Int {
 
 	dob[year, month] = day
 	var age = today[Calendar.YEAR] - dob[Calendar.YEAR]
-	if (today[Calendar.DAY_OF_YEAR] < dob[Calendar.DAY_OF_YEAR]) {
+	if(today[Calendar.DAY_OF_YEAR] < dob[Calendar.DAY_OF_YEAR]) {
 		age--
 	}
 	return age
